@@ -2,10 +2,8 @@
 
 using namespace std;
 
-int get_sum(int a, int b)
-{
+int get_sum(int a, int b) {
   int c = 0;
-
   int start = (a < b) ? a : b;
   int end = (a < b) ? b : a;
 
@@ -15,14 +13,10 @@ int get_sum(int a, int b)
   }
 
   cout << "sum : " << a << " to " << b << " => " << c;
-
   return c;
 }
 
-int main()
-{
-
+int main() {
   get_sum(56, 68);
-
   return 0;
 }

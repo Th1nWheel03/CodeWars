@@ -4,8 +4,6 @@
 
 using namespace std;
 
-
-
 bool narcissistic(int value) {
     int originalValue = value;
     int digits = log10(value) + 1;
@@ -21,15 +19,13 @@ bool narcissistic(int value) {
 }
 
 int main() {
-
     int num = 153;
 
-    int number = narcissistic(num);
-
-    if (number == 1){
+    if (narcissistic(num)){
         cout << "Nombre " << num << " => est narcissistic";
     }
-    if (number == 0){
+    
+    else {
         cout << "Nombre " << num << " => n'est pas narcissistic";
     }
 
